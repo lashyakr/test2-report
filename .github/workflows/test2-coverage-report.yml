@@ -21,6 +21,7 @@ jobs:
     - run: node --version
     - run: npm --version
     - run: echo "Testing variable $TEST_VAR"
+    - run: echo "Testing completed"
     - uses: actions/upload-artifact@v4.0.0
       if: success()
       with:
